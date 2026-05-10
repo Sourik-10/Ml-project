@@ -28,7 +28,7 @@ def read_sql_data():
         logging.info("Successfully connected to the database")
 
         df = pd.read_sql_query(
-            "SELECT * FROM students",
+            "SELECT * FROM student",
             mydb
         )
 
