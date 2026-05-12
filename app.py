@@ -4,11 +4,15 @@ import sys
 
 from src.ml_project.components.data_ingestion import DataIngestion
 from src.ml_project.components.data_transformation import DataTransformation
+from src.ml_project.components.model_trainer import (
+    ModelTrainer,
+    ModelTrainerConfig
+)
 
 
 if __name__ == "__main__":
 
-    logging.info("This is a log message from app.py")
+    logging.info("The execution has started")
 
     try:
 
@@ -27,7 +31,16 @@ if __name__ == "__main__":
             )
         )
 
-        logging.info("Data Transformation completed")
+        ## Model Training
+
+        model_trainer = ModelTrainer()
+
+        print(
+            model_trainer.initiate_model_trainer(
+                train_arr,
+                test_arr
+            )
+        )
 
     except Exception as e:
 
