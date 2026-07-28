@@ -19,8 +19,7 @@ A **production-grade, modular machine learning pipeline** that predicts student 
 - ✅ DVC (Data Version Control) for reproducible data and artifact versioning
 - ✅ Custom logging and exception handling throughout the pipeline
 - ✅ GitHub Actions CI/CD for automated testing and deployment
-- ✅ Flask web app for real-time predictions
-
+- 
 ---
 
 ## 🛠️ Tech Stack
@@ -33,7 +32,6 @@ A **production-grade, modular machine learning pipeline** that predicts student 
 | Database | MySQL (`mysql-connector-python`, `pymysql`) |
 | Visualization | Matplotlib, Seaborn |
 | Data Versioning | DVC |
-| Web Framework | Flask |
 | CI/CD | GitHub Actions |
 | Environment | `python-dotenv` |
 
